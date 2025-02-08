@@ -1,4 +1,5 @@
 ImportantSQL/
 data_generation.py
-DUMB/
+.DS_Store
+DUMP/
 package-lock.json
