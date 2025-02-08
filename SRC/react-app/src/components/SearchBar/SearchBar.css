@@ -1,0 +1,92 @@
+/* SearchBar container */
+.searchbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--background-dark);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  /* Input field */
+  .search-input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1em;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--background-light);
+    color: var(--text-primary);
+    transition: border-color 0.25s, box-shadow 0.25s;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 4px var(--primary-color);
+  }
+  
+  /* Dropdown select */
+  .n-search {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--background-light);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: border-color 0.25s, box-shadow 0.25s;
+  }
+  
+  .n-search:hover {
+    border-color: var(--primary-color);
+  }
+  
+  .n-search:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 4px var(--primary-color);
+  }
+  
+  /* Search button */
+  .search-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }
+  
+  .search-button:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  .search-button:focus {
+    outline: none;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 4px var(--primary-color);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .searchbar-container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+    }
+  
+    .search-input,
+    .n-search,
+    .search-button {
+      width: 100%;
+    }
+  }

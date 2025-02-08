@@ -1,0 +1,116 @@
+/* Container for search results */
+.results-container {
+    background-color: var(--background-dark);
+    max-width: 1200px;
+    margin: 50px auto 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  /* Search bar container */
+.search-bar {
+    width: 100%;
+    max-width: 600px;
+    margin-top:70px;
+    margin-left: 450px
+}
+  
+  /* Course List Styling */
+  .course-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .course-list li {
+    background-color: var(--background-light);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .course-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-list h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: var(--text-primary);
+  }
+  
+  .course-list p {
+    margin: 5px 0;
+    color: var(--text-secondary);
+  }
+  
+  /* Pagination Controls */
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .pagination button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+  }
+  
+  .pagination button:disabled {
+    background-color: var(--border-color);
+    cursor: not-allowed;
+  }
+  
+  .pagination div {
+    font-size: 1.2em;
+    color: var(--text-secondary);
+  }
+  
+  /* No Results Message */
+  .no-results {
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--danger-color);
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--background-dark);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .results-container {
+      padding: 15px;
+    }
+  
+    .course-list li {
+      padding: 10px;
+    }
+  
+    .pagination button {
+      padding: 8px 12px;
+      font-size: 0.9em;
+    }
+  }

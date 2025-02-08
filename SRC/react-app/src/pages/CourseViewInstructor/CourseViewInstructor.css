@@ -1,0 +1,153 @@
+/* CourseViewInstructor.css */
+
+.course-view-container {
+  max-width: 1200px;
+  margin: 30px auto 20px;
+  margin-top: 100px;
+  padding: 30px;
+  background-color: var(--background-dark);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.back-button button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.course-view-container h2 {
+  text-align: center;
+  color: var(--text-primary);
+  position: absolute;
+  top: 20px;
+  font-size: 2em;
+}
+
+.instructor-info {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+
+.instructor-info h3 {
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.instructor-info p {
+  color: var(--text-secondary);
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.instructor-info strong {
+  color: var(--text-primary);
+  margin-right: 10px;
+}
+
+.course-records {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.academic-year {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  overflow: hidden;
+  
+}
+
+.academic-year h3 {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 20px;
+  margin: 0;
+}
+
+.course-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-between;
+  
+}
+
+.course-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: calc(33.33% - 20px); /* Adjusts the width of each card */
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  width:100%
+}
+
+/* Add hover effect to the course card */
+.course-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.course-card h4 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.course-card strong {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .course-view-container {
+      margin: 80px 15px 20px;
+      padding: 20px;
+  }
+
+  .back-button {
+      top: 20px;
+      left: 20px;
+  }
+
+  .course-card {
+      width: 100%; /* Ensure cards are full width on small screens */
+  }
+
+  .course-cards {
+      justify-content: center; /* Center the cards in smaller screens */
+  }
+}

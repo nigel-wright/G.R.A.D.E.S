@@ -1,0 +1,167 @@
+/* Main container for the CourseView page */
+.course-view-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-family: inherit;
+    background-color: transparent;
+}
+
+/* Back button container */
+.back-button {
+    align-self: flex-start;
+}
+
+.back-button button {
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Search bar container */
+.search-bar {
+    width: 100%;
+    max-width: 600px;
+    margin: 60px auto; /* Centers the search bar horizontally */
+    display: flex;
+    justify-content: center; /* Centers the content inside the container */
+}
+
+/* Results container */
+.results-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--background-dark);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Results header */
+.list-title {
+    text-align: center;
+    font-size: 24px;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+/* Individual course items */
+.results-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.results-container li {
+    background-color: var(--background-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.results-container li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Course details */
+.results-container li h3 {
+    margin: 0 auto;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.results-container li p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* Toggle button for "View More" and "View Less" */
+.toggle-button {
+    background-color: var(--success-color);
+    color: var(--text-primary);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.toggle-button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Additional professor info */
+.extra-info {
+    margin-top: 15px;
+    background-color: var(--background-dark);
+    border: 1px solid #535bf2;
+    border-radius: 8px;
+    padding: 10px;
+    color: var(--text-secondary);
+}
+
+.prof-info h4 {
+    font-size: 18px;
+    color: var(--text-primary);
+}
+
+.prof-info p {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* Error message styling */
+p[style*="color: red"] {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* No results message */
+.results-container h3 {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--danger-color);
+    margin: 0px auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .results-container {
+        padding: 15px;
+    }
+
+    .results-container li {
+        padding: 10px;
+    }
+
+    .toggle-button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .list-title {
+        font-size: 20px;
+    }
+}

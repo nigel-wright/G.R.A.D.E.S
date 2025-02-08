@@ -1,0 +1,4 @@
+/* Styling to unfocus modal backdrops */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  }

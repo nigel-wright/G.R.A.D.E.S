@@ -1,0 +1,98 @@
+/* Add Calendar Container */
+.add-event-container {
+    margin-top: 80px;
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-dark);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--text-secondary);
+}
+
+.add-event-container h2 {
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+.add-event-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-event-container label {
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.add-event-container input,
+.add-event-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--background-light);
+    color: var(--text-primary);
+}
+
+.add-event-container input:focus,
+.add-event-container textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.add-event-container textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.error-message {
+    color: var(--danger-color);
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Submit Button */
+.add-event-container button {
+    background-color: #2ecc71; /* Matches the add-event button in your calendar */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.add-event-container button:hover {
+    background-color: #27ae60;
+}
+
+/* Back Button Section */
+.back-button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.back-button button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button button:hover {
+    background-color: #2980b9;
+}
